@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">文字数カウント</string>
+
+    <string name="hint">ここに文字を入力してください</string>
+
+    <plurals name="bytes">
+        <item quantity="one">バイト：1</item>
+        <item quantity="other">バイト：%1$d</item>
+    </plurals>
+    <plurals name="chars">
+        <item quantity="one">文字：1</item>
+        <item quantity="other">文字：%1$d</item>
+    </plurals>
+    <plurals name="words">
+        <item quantity="one">単語：1</item>
+        <item quantity="other">単語：%1$d</item>
+    </plurals>
+    <plurals name="sentences">
+        <item quantity="one">文：1</item>
+        <item quantity="other">文：%1$d</item>
+    </plurals>
+    <plurals name="paragraphs">
+        <item quantity="one">段落：1</item>
+        <item quantity="other">段落：%1$d</item>
+    </plurals>
+
+    <string name="open_source_license">オープンソースライセンス</string>
+</resources>

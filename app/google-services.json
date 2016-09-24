@@ -1,0 +1,73 @@
+{
+  "project_info": {
+    "project_number": "905945060581",
+    "firebase_url": "https://text-counter.firebaseio.com",
+    "project_id": "text-counter",
+    "storage_bucket": "text-counter.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:905945060581:android:19e3e988449a99c9",
+        "android_client_info": {
+          "package_name": "com.nagopy.android.textcounter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "905945060581-cnpf580o4hpt6pomutbtful3mau3psan.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBXjaHk28edYkNfHhwl2pbueAT5mLi12nM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:905945060581:android:4d983e75967eced9",
+        "android_client_info": {
+          "package_name": "com.nagopy.android.textcounter.ja"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "905945060581-cnpf580o4hpt6pomutbtful3mau3psan.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBXjaHk28edYkNfHhwl2pbueAT5mLi12nM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

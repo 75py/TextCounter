@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:binding="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="vm"
+            type="com.nagopy.android.textcounter.vm.VMTextCounter" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_vertical_margin">
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/ad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            ads:adSize="BANNER"
+            ads:adUnitId="@string/banner_ad_unit_id" />
+
+        <LinearLayout
+            android:id="@+id/result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignWithParentIfMissing="true"
+            android:layout_below="@+id/ad"
+            android:background="@drawable/divider"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/count_result_vertical_horizontal"
+            android:paddingTop="@dimen/count_result_vertical_horizontal">
+
+            <TextView
+                android:id="@+id/result_bytes"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@{@plurals/bytes(vm.bytes, vm.bytes)}"
+                tools:text="123 bytes" />
+
+            <TextView
+                android:id="@+id/result_chars"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@{@plurals/chars(vm.chars, vm.chars)}"
+                tools:text="123 chars" />
+
+            <TextView
+                android:id="@+id/result_words"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@{@plurals/words(vm.words, vm.words)}"
+                android:visibility="@{vm.words &lt; 0 ? View.GONE : View.VISIBLE}"
+                tools:text="123 words" />
+
+
+            <TextView
+                android:id="@+id/result_sentences"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@{@plurals/sentences(vm.sentences, vm.sentences)}"
+                tools:text="123 sentences" />
+
+            <TextView
+                android:id="@+id/result_paragraphs"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@{@plurals/paragraphs(vm.paragraphs, vm.paragraphs)}"
+                tools:text="123 paragraphs" />
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/result">
+
+            <EditText
+                android:id="@+id/edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start|top"
+                android:hint="@string/hint"
+                android:inputType="textMultiLine|textLongMessage"
+                android:minLines="3"
+                android:text="@{vm.text}"
+                binding:addTextChangedListener="@{vm.textWatcher}" />
+        </ScrollView>
+
+    </RelativeLayout>
+</layout>

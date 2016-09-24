@@ -1,0 +1,36 @@
+- artifact: com.android.databinding:+:+
+  skip: true
+
+- artifact: com.google.android.gms:+:+
+  skip: true
+
+- artifact: com.google.firebase:+:+
+  skip: true # TODO
+
+- artifact: com.android.support:+:+
+  name: Android Support Libraries
+  copyrightHolder: The Android Open Source Project
+  license: apache2
+
+- artifact: com.google.dagger:dagger:+
+  name: Dagger
+  copyrightHolder: The Dagger Authors
+  license: apache2
+
+- artifact: javax.inject:javax.inject:+
+  name: javax.inject
+  copyrightHolder: The JSR-330 Expert Group
+  license: The Apache Software License, Version 2.0
+  url: http://code.google.com/p/atinject/
+
+- artifact: com.github.hotchemi:permissionsdispatcher:+
+  name: PermissionsDispatcher
+  copyrightHolder: Shintaro Katafuchi, Marcel Schnelle, Yoshinori Isogai
+  license: apache2
+
+- artifact: com.jakewharton.timber:timber:+
+  name: Timber
+  copyrightHolder: Jake Wharton
+  license: The Apache Software License, Version 2.0
+  url: https://github.com/JakeWharton/timber
+
