@@ -14,4 +14,21 @@
  * limitations under the License.
  */
 
-include ':app'
+package com.nagopy.android.textcounter
+
+import android.content.SharedPreferences
+import timber.log.Timber
+
+class TextBackup(val sp: SharedPreferences) {
+
+    fun backup(text: String) {
+        Timber.d("backup: %s", text)
+        sp.edit().putString("backup", text).apply()
+    }
+
+    fun restore(): String {
+        Timber.d("restore")
+        return sp.getString("backup", "")
+    }
+
+}

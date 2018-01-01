@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright 2018 75py
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~    http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<resources>
+    <string name="app_name">文字数カウント</string>
+
+    <string name="app_name_with_count_lang">文字数カウント（%s）</string>
+    <string name="lang_en">英語</string>
+    <string name="lang_ja">日本語</string>
+
+    <string name="action_more">More</string>
+    <string name="open_source_license">オープンソースライセンス</string>
+    <string name="hint">ここに入力してください</string>
+
+    <string name="share_text">入力した文字を共有</string>
+    <string name="share_text_subject" />
+    <string name="share_result">カウント結果を共有</string>
+    <string name="share_result_subject">カウント結果</string>
+
+    <string name="reward_explain_title">ビデオ広告を見てバナー広告を非表示にする</string>
+    <string name="reward_explain_text">ビデオ広告を見ると、メイン画面上部のバナー広告を数時間非表示にできます。\n動画を開始しますか？</string>
+
+    <string name="choose_count_lang">言語を選択</string>
+    <plurals name="chars">
+        <item quantity="other">文字：%1$d</item>
+    </plurals>
+    <plurals name="words">
+        <item quantity="other">単語：%1$d</item>
+    </plurals>
+    <plurals name="sentences">
+        <item quantity="other">文：%1$d</item>
+    </plurals>
+    <plurals name="paragraphs">
+        <item quantity="other">段落：%1$d</item>
+    </plurals>
+    <plurals name="whitespaces">
+        <item quantity="other">空白：%1$d</item>
+    </plurals>
+</resources>
