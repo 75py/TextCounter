@@ -1,0 +1,62 @@
+<!--
+  ~ Copyright 2018 75py
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~    http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<resources>
+    <string name="app_name">Text Counter</string>
+
+    <string name="app_name_with_count_lang">Text Counter(%s)</string>
+    <string name="lang_en">English</string>
+    <string name="lang_ja">Japanese</string>
+
+    <string name="action_more">More</string>
+    <string name="open_source_license">Open source license</string>
+    <string name="hint">Input here</string>
+
+    <string name="share_text">Share input text</string>
+    <string name="share_text_subject" />
+    <string name="share_result">Share count result</string>
+    <string name="share_result_subject">Count result</string>
+
+    <string name="reward_explain_title">Watch video and hide banner ads</string>
+    <string name="reward_explain_text">If you watch an ads video, the banner ads which displayed on the main screen will be hidden for several hours.\nStart a video?</string>
+
+    <string name="choose_count_lang">Choose a count language</string>
+    <string-array name="count_lang">
+        <item>@string/lang_en</item>
+        <item>@string/lang_ja</item>
+    </string-array>
+    <plurals name="chars">
+        <item quantity="one">1 char</item>
+        <item quantity="other">%1$d chars</item>
+    </plurals>
+    <plurals name="words">
+        <item quantity="one">1 word</item>
+        <item quantity="other">%1$d words</item>
+    </plurals>
+    <plurals name="sentences">
+        <item quantity="one">1 sentence</item>
+        <item quantity="other">%1$d sentences</item>
+    </plurals>
+    <plurals name="paragraphs">
+        <item quantity="one">1 paragraphs</item>
+        <item quantity="other">%1$d paragraphs</item>
+    </plurals>
+    <plurals name="whitespaces">
+        <item quantity="one">1 whitespace</item>
+        <item quantity="other">%d whitespaces</item>
+    </plurals>
+
+</resources>

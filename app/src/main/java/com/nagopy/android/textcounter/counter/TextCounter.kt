@@ -14,4 +14,16 @@
  * limitations under the License.
  */
 
-include ':app'
+package com.nagopy.android.textcounter.counter
+
+interface TextCounter {
+
+    fun countChars(inputText: String): Int
+    fun countWords(inputText: String): Int
+    fun countSentences(inputText: String): Int
+    fun countParagraphs(inputText: String): Int
+    fun countWhitespaces(inputText: String): Int
+
+    fun String.remove(regex: Regex): String = this.replace(regex, "")
+    fun String.count(regex: Regex): Int = this.length - remove(regex).length
+}
