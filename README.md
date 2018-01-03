@@ -1,4 +1,4 @@
-# Text Counter
+# Text Counter [![Build Status](https://travis-ci.org/75py/TextCounter.svg?branch=master)](https://travis-ci.org/75py/TextCounter) [![codecov](https://codecov.io/gh/75py/TextCounter/branch/master/graph/badge.svg)](https://codecov.io/gh/75py/TextCounter)
 
 Counts the number of characters, words, sentences, paragraphs, and whitespaces.
 
